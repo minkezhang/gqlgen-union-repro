@@ -1,0 +1,17 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+type Foo {
+  foo: ID!
+}
+
+type Bar {
+  bar: ID!
+}
+
+union Baz = Foo | Bar
+
+type Data {
+  baz: Baz!
+}
